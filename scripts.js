@@ -41,7 +41,6 @@ function start() {
                 seconds = 0;
             }
     
-
             secondsEl.textContent = formatTime(seconds);
             minutesEl.textContent = formatTime(minutes);
         }
@@ -69,7 +68,6 @@ function reset() {
     milliseconds = 0; 
     minutesEl.textContent = '00';
     secondsEl.textContent = '00';
-    millisecondsEl.textContent = '00';
     btnResume.style.display = 'none'; 
     btnPause.style.display = 'none';
     btnReset.style.display = 'none';
@@ -80,3 +78,5 @@ function reset() {
 function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
+
+
